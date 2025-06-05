@@ -1,11 +1,4 @@
-# AGENT.md – Single‑Shot Prompt for Codex
 
-> **Purpose**  Provide one consolidated prompt that, when fed to OpenAI Codex (or any capable code‑gen LLM), bootstraps an entire repo for a PLO 5 EV + Progressive Jackpot calculator using **Node 20**, **React 18**, **TypeScript**, **Tailwind CSS**, **Prisma/Postgres**, **Docker**, and full test/CI pipeline.
-> The model should reply with every required file, ready to `git init`, `pnpm i`, and `docker compose up`.
-
----
-
-## 📋 Copy‑&‑Paste Prompt
 
 ```text
 You are an elite software architect and world champion PLO5 grinder.  Create a complete codebase that meets *all* requirements below.  **Output in the exact format**:
@@ -70,15 +63,4 @@ Generate **all** of the following (feel free to add more if needed):
 Return only file blocks – no prose.  Begin now.
 ```
 
----
-
-## ✅ How to Use
-
-1. Open Codex playground (or GitHub Copilot Chat).
-2. Paste the **full prompt** above.
-3. Wait for the model to emit every file delineated by `--- path` / `--- end`.
-4. Pipe into `bash` to write files, or copy into your repo.
-5. `pnpm i && docker compose up --build`
-
-*GG!*
 
