@@ -1,0 +1,15 @@
+{
+  "name": "ev-jackpot-calculator",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/web",
+    "packages/poker-sim"
+  ],
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "pnpm -r run test"
+  }
+}
