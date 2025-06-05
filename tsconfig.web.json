@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "baseUrl": "./"
+  },
+  "include": ["apps/web/src", "apps/web/vite.config.ts", "apps/web/tailwind.config.ts"]
+}
