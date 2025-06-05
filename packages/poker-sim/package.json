@@ -1,0 +1,14 @@
+{
+  "name": "poker-sim",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "ts-jest": "^29.1.0",
+    "@types/jest": "^29.5.2"
+  }
+}
