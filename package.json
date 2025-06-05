@@ -11,5 +11,8 @@
     "dev": "pnpm -r run dev",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "pnpm -r run test"
+  },
+  "devDependencies": {
+    "vite": "^4.5.14"
   }
 }

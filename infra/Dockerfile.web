@@ -2,7 +2,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package.json pnpm-workspace.yaml ./
 COPY apps/web apps/web
-RUN corepack enable && pnpm install --filter ./apps/web --prod && pnpm --filter ./apps/web build
+RUN corepack enable && pnpm install --filter ./apps/web  && pnpm --filter ./apps/web build
 
 FROM nginx:1.25-alpine
 COPY --from=builder /app/apps/web/dist /usr/share/nginx/html
